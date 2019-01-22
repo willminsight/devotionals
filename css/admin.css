@@ -1,1 +1,51 @@
+#iflm_meta {
+    overflow: hidden;
+    padding-bottom: 1em;
+}
+ 
+.iflm-heading {
+	border-top: 1px solid #cccccc;
+	margin-top: 1em;
+	padding-top: .75em
+}
 
+.iflm-row-content{
+    margin: 1em 0;
+	margin-left: 160px;
+	clear: both;
+}
+ 
+.iflm-row-content label{
+    display: block;
+	float: left;
+	margin-left: -160px;
+	padding: .2em 0;
+	width: 150px;
+}
+
+.iflm-row-content .iflm-row-input {
+	float: right;
+	width: 100%;
+}
+
+.iflm-row-content .iflm-row-input .clear {
+	clear: both;
+}
+
+.iflm-row-content input[type=text]{
+	width: 70%;
+	max-width: 100%;
+}
+
+.iflm-row-content textarea {
+	height: 4em;
+	width: 100%;
+}
+
+.iflm-row-content div#wp-iflm_devo_footnote-wrap {
+	margin-top: -1em;
+}
+
+.iflm-row-content p.howto {
+	margin-top: .5em;
+}
