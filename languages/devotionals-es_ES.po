@@ -1,23 +1,23 @@
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Devotionals\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-22 17:22+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: 2019-01-22 17:22+0000\n"
+"Last-Translator: Will Murphy <willm@insight.org>\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-5.0.3"
 
 #. Name of the plugin
 #: devotionals.php:62 devotionals.php:74 inc/iflm_options.php:5
 msgid "Devotionals"
-msgstr ""
+msgstr "Devocionales"
 
 #: devotionals.php:63
 msgid "Devotional"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: devotionals.php:350
 msgid "Tweet This"
-msgstr ""
+msgstr "Tweet esto"
 
 #: inc/iflm_options.php:4
 msgid "Devotionals Options"

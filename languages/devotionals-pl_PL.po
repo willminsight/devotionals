@@ -1,47 +1,48 @@
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: IFLM Devotionals\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-22 17:22+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: 2019-01-22 17:24+0000\n"
+"Last-Translator: Will Murphy <willm@insight.org>\n"
+"Language-Team: Polish\n"
+"Language: pl_PL\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-5.0.3"
 
 #. Name of the plugin
 #: devotionals.php:62 devotionals.php:74 inc/iflm_options.php:5
 msgid "Devotionals"
-msgstr ""
+msgstr "Rozważania"
 
 #: devotionals.php:63
 msgid "Devotional"
-msgstr ""
+msgstr "Rozważanie"
 
 #: devotionals.php:64 devotionals.php:65
 msgid "Add New Devotional"
-msgstr ""
+msgstr "Dodaj rozważanie"
 
 #: devotionals.php:66
 msgid "Edit Devotional"
-msgstr ""
+msgstr "Edytuj rozważanie"
 
 #: devotionals.php:67
 msgid "New Devotional"
-msgstr ""
+msgstr "Nowe rozważanie"
 
 #: devotionals.php:68
 msgid "All Devotionals"
-msgstr ""
+msgstr "Wszystkie rozważania"
 
 #: devotionals.php:69
 msgid "View Devotional"
-msgstr ""
+msgstr "Zobacz rozważanie"
 
 #: devotionals.php:70
 msgid "Search Devotionals"
@@ -81,7 +82,7 @@ msgstr ""
 
 #: devotionals.php:350
 msgid "Tweet This"
-msgstr ""
+msgstr "Tweetuj"
 
 #: inc/iflm_options.php:4
 msgid "Devotionals Options"
