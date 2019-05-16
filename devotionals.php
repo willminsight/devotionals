@@ -1,23 +1,25 @@
 <?php
 /*
-Plugin Name:  IFLM Devotionals
-Plugin URI:   https://insightworld.org/devotionals-plugin
-Description:  Create devotional posts on your ministry blog, including standard or custom archives and RSS Feed. You can also optionally include tweetable quotes.
-Version:      1.2.7
-Author:       Insight for Living Ministries
-Author URI:   https://insightworld.org/
-License:      GPL2
-License URI:  https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain:  devotionals
-Domain Path:  /languages/
+Plugin Name:		IFLM Devotionals
+Plugin URI:			https://github.com/willminsight/devotionals
+GitHub Plugin URI:	willminsight/devotionals
+GitHub Plugin URI:	https://github.com/willminsight/devotionals
+Description:	Create devotional posts on your ministry blog, including standard or custom archives and RSS Feed. You can also optionally include tweetable quotes.
+Version:		1.2.7.1
+Author:			Insight for Living Ministries
+Author URI:		https://insight.org/
+License:		GPL2
+License URI:	https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:	devotionals
+Domain Path:	/languages/
 
 
-Devotionals is free software: you can redistribute it and/or modify
+IFLM Devotionals is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 2 of the License, or
 any later version.
  
-Devotionals is distributed in the hope that it will be useful,
+IFLM Devotionals is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
