@@ -1,3 +1,3 @@
-# iflm-devotionals
+# devotionals
 
-Hi HUmans!
+Hi Humans!
