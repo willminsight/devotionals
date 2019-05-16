@@ -6,7 +6,7 @@ function devotionals_menu() {
     $capability = 'manage_options';
     $menu_slug  = 'iflm-devotionals';
     $function   = 'devotionals_options';
-    
+
     add_options_page( $page_title, $menu_title, $capability, $menu_slug, $function);
 }
 

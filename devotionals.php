@@ -3,7 +3,7 @@
 Plugin Name:  IFLM Devotionals
 Plugin URI:   https://insightworld.org/devotionals-plugin
 Description:  Create devotional posts on your ministry blog, including standard or custom archives and RSS Feed. You can also optionally include tweetable quotes.
-Version:      1.2.5.1
+Version:      1.2.7
 Author:       Insight for Living Ministries
 Author URI:   https://insightworld.org/
 License:      GPL2
@@ -45,10 +45,10 @@ function iflm_devo_setup_post_type() {
     }
 	
     // has_archive and feed rewrite rule
-	if($atts['iflm_devo_has_archive'] == 'yes' ||
-       (get_option('iflm_devo_has_archive') === 'true' && $atts['iflm_devo_has_archive'] !== 'false') ){
-      	$has_archive = settype(get_option('iflm_devo_has_archive'), 'boolean');
-    } else {
+    if( get_option('iflm_devo_has_archive') === 'true' ){
+      	$has_archive = true;
+    } 
+    else {
 		$has_archive = false;
         add_rewrite_rule( '^'.$saved_slug.'/feed/?', 'index.php?feed=feed&post_type=iflm_devotional', 'top' );
 	}
@@ -354,7 +354,7 @@ function iflm_devo_content( $content ) {
 					<span class="tweet-attr">&mdash; <span>'.$tweet_quote_author.'</span></span>';
             if( $tweet_quote_author_username != '' ){
                 $tweet_quote_html .= '
-                    <a class="button tweet-button" href="https://twitter.com/intent/tweet?text='.$tweet_quote.'&via='.$tweet_quote_author_username.'&url='.$shortURL.'" target="_blank"><span class="fa fa-twitter fa-lg"></span>'. $tweet_this_button_text . '</a>';
+                    <a class="button tweet-button" href="https://twitter.com/intent/tweet?text='.urlencode ($tweet_quote).'&via='.$tweet_quote_author_username.'&url='.$shortURL.'" target="_blank"><span class="fa fa-twitter fa-lg"></span>'. $tweet_this_button_text . '</a>';
             }
             $tweet_quote_html .= '
                 </div>';
