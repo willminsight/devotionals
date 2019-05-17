@@ -14,11 +14,16 @@
 
 Create devotional posts on your ministry blog, including standard or custom archives and RSS Feed. You can also optionally include tweetable quotes. Features include:
 
-* Linkable Scripture references, using biblegateway.com
-* Footnote and copyrights
-* Tweetable Quotes that allow you to automatically add a "Tweet This" button
-* Tweetable Quote is tied to the Author's twitter handle
-* RSS Feed and Archives page can be customized
+* Linkable Scripture references, using any version accessible on biblegateway.com.
+* Tweetable Quotes that allow you to automatically add a memorable quote from the devotional and a "Tweet This" button to the bottom of devotional.
+* Tweetable Quote is automatically tied to the Author's user account twitter handle, but can be customized per devotional post.
+* Footnote and copyright information can be easily added to bottom of each devotional.
+* RSS Feed and Archives pages can use standard WP or customized urls to match your site's navigation and permalink stucture.
+* RSS Feed is formatted for Mailchimp and other RSS based content integrations.
+
+## Screenshots
+![Settings](./screenshot-1.png)
+
 
 ## Change Log
 
