@@ -5,7 +5,7 @@ Plugin URI:			https://github.com/willminsight/devotionals
 GitHub Plugin URI:	willminsight/devotionals
 GitHub Plugin URI:	https://github.com/willminsight/devotionals
 Description:	Create devotional posts on your ministry blog, including standard or custom archives and RSS Feed. You can also optionally include tweetable quotes.
-Version:		1.2.7
+Version:		1.2.7.1
 Author:			Insight for Living Ministries
 Author URI:		https://insight.org/
 License:		GPL2
