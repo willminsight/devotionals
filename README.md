@@ -10,3 +10,17 @@
 * License: GPLv2 or later
 * License URI: <https://www.gnu.org/licenses/gpl-2.0.html>
 
+## Description
+
+Create devotional posts on your ministry blog, including standard or custom archives and RSS Feed. You can also optionally include tweetable quotes. Features include:
+
+* Linkable Scripture references, using biblegateway.com
+* Footnote and copyrights
+* Tweetable Quotes that allow you to automatically add a "Tweet This" button
+* Tweetable Quote is tied to the Author's twitter handle
+* RSS Feed and Archives page can be customized
+
+## Change Log
+
+### 1.2.7 - May 14, 2019
+Added url encoding to tweetable quote text when used as a part of the "Tweet This" url.
