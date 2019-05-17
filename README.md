@@ -29,6 +29,7 @@ Create devotional posts on your ministry blog, including standard or custom arch
 | ![Devotional Top](screenshot-3.png) | ![Devotional Bottom](screenshot-4.png) | 
 
 ### Settings:
+|------------|-------------| 
 | ![Devotional Top](screenshot-1.png) | ![Devotional Bottom](screenshot-2.png) | 
 
 
