@@ -32,5 +32,8 @@ Create devotional posts on your ministry blog, including standard or custom arch
 
 ## Change Log
 
+### 1.2.8 - May 16, 2019
+Updated plugin readme information.
+
 ### 1.2.7 - May 14, 2019
 Added url encoding to tweetable quote text when used as a part of the "Tweet This" url.
