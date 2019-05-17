@@ -22,16 +22,15 @@ Create devotional posts on your ministry blog, including standard or custom arch
 * RSS Feed is pre-formatted for Mailchimp and other RSS based content integrations.
 
 ## Screenshots
-### Top of Devotional:
-![Devotional Top](screenshot-3.png)
 
-### Bottom of Devotional:
-![Devotional Bottom](screenshot-4.png)
+### Frontend:
+| Top | Bottom | 
+|------------|-------------| 
+| ![Devotional Top](screenshot-3.png) | ![Devotional Bottom](screenshot-4.png) | 
 
 ### Settings:
-![Settings](screenshot-1.png)
+| ![Devotional Top](screenshot-1.png) | ![Devotional Bottom](screenshot-2.png) | 
 
-![Settings](screenshot-2.png)
 
 
 ## Change Log
