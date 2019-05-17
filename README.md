@@ -19,13 +19,16 @@ Create devotional posts on your ministry blog, including standard or custom arch
 * Tweetable Quote is automatically tied to the Author's user account twitter handle, but can be customized per devotional post.
 * Footnote and copyright information can be easily added to bottom of each devotional.
 * RSS Feed and Archives pages can use standard WP or customized urls to match your site's navigation and permalink stucture.
-* RSS Feed is formatted for Mailchimp and other RSS based content integrations.
+* RSS Feed is pre-formatted for Mailchimp and other RSS based content integrations.
 
 ## Screenshots
+### Top of Devotional:
 ![Devotional Top](screenshot-3.png)
 
+### Bottom of Devotional:
 ![Devotional Bottom](screenshot-4.png)
 
+### Settings:
 ![Settings](screenshot-1.png)
 
 ![Settings](screenshot-2.png)
