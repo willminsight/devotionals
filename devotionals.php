@@ -135,6 +135,8 @@ add_action( 'add_meta_boxes', 'iflm_devo_custom_meta' );
  * Outputs the content of the meta box
  */
 function iflm_devo_meta_callback( $post ) {
+	$saved_value = '';
+	
     wp_nonce_field( basename( __FILE__ ), 'iflm_devo_nonce' );
     $iflm_devo_stored_meta = get_post_meta( $post->ID );
 
@@ -168,8 +170,10 @@ function iflm_devo_meta_callback( $post ) {
     </div>
 
     <!-- footnote -->
-	<?php 
-	if ( isset ( $iflm_devo_stored_meta['iflm_devo_footnote'] ) ) $saved_value = $iflm_devo_stored_meta['iflm_devo_footnote'][0];
+	<?php
+	if ( isset ( $iflm_devo_stored_meta['iflm_devo_footnote'] ) ) {
+		$saved_value = $iflm_devo_stored_meta['iflm_devo_footnote'][0];
+	}
 	$settings = array('textarea_name' => 'iflm_devo_footnote', 'media_buttons' => false);
 	?>
 	<div class="iflm-row-content">
