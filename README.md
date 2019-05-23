@@ -1,4 +1,4 @@
-# IFLM Devotionals
+# Devotionals
 
 * Contributors: [Will Murphy](https://github.com/willminsight)
 * Tags: plugin, custom post type, devotionals, scripture references, footnotes, tweet this
@@ -25,8 +25,8 @@ Create devotional posts on your ministry blog, including standard or custom arch
 
 | Frontend | Settings |
 |------------|-------------| 
-| ![Devotional Top](screenshot-3.png) | ![Devotional Bottom](screenshot-1.png) | 
-| ![Devotional Top](screenshot-4.png) | ![Devotional Bottom](screenshot-2.png) | 
+| ![Devotional Top](assets/screenshot-3.png) | ![Devotional Bottom](assets/screenshot-1.png) | 
+| ![Devotional Top](assets/screenshot-4.png) | ![Devotional Bottom](assets/screenshot-2.png) | 
 
 
 

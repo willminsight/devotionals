@@ -1,0 +1,76 @@
+/*
+ * Front end display styles for footnotes, scripture references, and "tweet this" pull-quotes.
+*/
+
+/* Footnotes styles */
+div.footnote {
+	border-top: 1px solid #ddd;
+	line-height: 1.5em;	
+	font-size: .9em;
+	margin-top: 2em;
+	margin-bottom: 1em;
+	opacity: .8;
+	padding-top: 1em;
+}
+
+div.footnote ol {
+	margin-left: 2em; 
+	font-size: inherit;
+}
+
+div.footnote ol + p {
+	margin-top: 2em; 
+}
+
+div.footnote li {
+	font-size: inherit;
+	line-height: 1.2em; 
+	padding: .4em 0;
+}
+
+/* Scripture references */
+.entry-content blockquote.scripture {
+	text-align: center;
+}
+
+/* Tweetable pull-quote styles */
+.tweet-this {
+	margin: 2em;
+	padding: 1em 2em 1em 2em;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+	position: relative;
+}
+
+.tweet-this p {
+	font-family: Georgia, serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.4em;
+}
+
+.tweet-this > span {
+	font-family: Georgia, serif;
+	font-style: italic;
+	font-size: 1.4em;
+}
+
+.tweet-this + .footnote {
+	border-top: none;
+	padding-top: 1em;
+}
+
+a.button.tweet-button,
+a:hover.button.tweet-button{
+	background-color: #ddd !important;
+	color: #3393FF !important;
+	display: table !important;
+	font-size: 1em;
+	margin: 1em auto -3em !important;
+	padding: 1em 3em !important;
+}
+
+.tweet-button span {
+	margin-right: 7px
+}
