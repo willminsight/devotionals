@@ -109,11 +109,11 @@ register_activation_hook( __FILE__, 'iflm_devo_install' );
  *
  * @return array
  */
-function user_contact_add_twitter( $user_contact ) {
+function iflm_devo_user_contact_add_twitter( $user_contact ) {
 	$user_contact['twitter'] = __( 'Twitter Username' );
 	return $user_contact;
 }
-add_filter( 'user_contactmethods', 'user_contact_add_twitter' );
+add_filter( 'user_contactmethods', 'iflm_devo_user_contact_add_twitter' );
 
 
 
@@ -330,7 +330,7 @@ function iflm_devo_content( $content ) {
 		if( $tweet_quote != '' && $tweet_quote_author != '' ){
 		
 			// This is the URL you want to shorten
-			$longURL = get_permalink( get_the_ID() );
+			$longURL = get_bloginfo('url').'/?p=' . get_the_ID();
 			$shortURL = $longURL;
 		
 			// Pull bit.ly Login and API Key from Plugin Settings
@@ -339,10 +339,12 @@ function iflm_devo_content( $content ) {
 		
 		
 			if($login != '' && $apiKey != '') {
-				$shortURL = get_bitly_short_url($longURL,$login,$apiKey);
-				if (strpos($shortURL, "http://bit.ly") !== 0) {
-					// use long URL in tweet text
-					$shortURL = $longURL;
+				$shortURL = iflm_devo_get_bitly_short_url($longURL,$login,$apiKey);
+				if(!empty($shortURL)){
+					if (strpos($shortURL, "http://bit.ly") !== 0) {
+						// use long URL in tweet text
+						$shortURL = $longURL;
+					}
 				}
 			}
 		
