@@ -32,6 +32,9 @@ Create devotional posts on your ministry blog, including standard or custom arch
 
 ## Change Log
 
+### 1.2.9 - May 23, 2019
+Updated plugin per wordpress recommendations.
+
 ### 1.2.8 - May 16, 2019
 Updated plugin readme information.
 
