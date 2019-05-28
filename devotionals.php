@@ -257,41 +257,64 @@ function iflm_devo_meta_callback( $post ) {
  * Saves the custom meta input
  */
 function iflm_devo_meta_save( $post_id ) {
-	// Checks save status
-	$is_autosave = wp_is_post_autosave( $post_id );
-	$is_revision = wp_is_post_revision( $post_id );
-	$is_valid_nonce = ( isset( $_POST[ 'iflm_devo_nonce' ] ) && wp_verify_nonce( $_POST[ 'iflm_devo_nonce' ], basename( __FILE__ ) ) ) ? 'true' : 'false';
+	$post_type = get_post_type($post_id);
+	
+	if ( 'iflm_devotional' == $post_type ) {
 
-	// Exits script depending on save status
-	if ( $is_autosave || $is_revision || !$is_valid_nonce ) {
-		return;
+		// Checks save status
+		$is_autosave = wp_is_post_autosave( $post_id );
+		$is_revision = wp_is_post_revision( $post_id );
+		$is_valid_nonce = ( isset( $_POST[ 'iflm_devo_nonce' ] ) && wp_verify_nonce( $_POST[ 'iflm_devo_nonce' ], basename( __FILE__ ) ) ) ? 'true' : 'false';
+
+		// Exits function depending on save status
+		if( $is_autosave || $is_revision || !$is_valid_nonce ) {
+			return;
+		}
+
+		// Checks for input and sanitizes/saves if needed
+		if( array_key_exists('iflm_devo-scripture', $_POST) ) {
+			$iflm_devo_scripture = sanitize_text_field( $_POST[ 'iflm_devo-scripture' ] );
+			if( isset( $iflm_devo_scripture ) ) {
+				update_post_meta( $post_id, 'iflm_devo-scripture', $iflm_devo_scripture );
+			}
+		}
+
+		if( array_key_exists('iflm_devo_footnote', $_POST) ) {
+			$iflm_devo_footnote = wp_kses_post( $_POST[ 'iflm_devo_footnote' ] );
+			if( isset( $iflm_devo_footnote ) ) {
+				update_post_meta( $post_id, 'iflm_devo_footnote', $iflm_devo_footnote );
+			}
+		}
+
+		if( array_key_exists('iflm_devo-tweet_quote', $_POST) ) {
+		$iflm_devo_tweet_quote = wp_kses_post( $_POST[ 'iflm_devo-tweet_quote' ] );
+			if( isset( $iflm_devo_tweet_quote ) ) {
+				update_post_meta( $post_id, 'iflm_devo-tweet_quote', $iflm_devo_tweet_quote );
+			}
+		}
+
+		if( array_key_exists('iflm_devo-tweet_quote_author', $_POST) ) {
+			$iflm_devo_tweet_quote_author = sanitize_text_field( $_POST[ 'iflm_devo-tweet_quote_author' ] );
+			if( isset( $iflm_devo_tweet_quote_author ) ) {
+				update_post_meta( $post_id, 'iflm_devo-tweet_quote_author', $iflm_devo_tweet_quote_author );
+			}
+		}
+
+		if( array_key_exists('iflm_devo-tweet_quote_author_username', $_POST) ) {
+			$iflm_devo_tweet_quote_author_username = sanitize_text_field( $_POST[ 'iflm_devo-tweet_quote_author_username' ] );
+			if( isset( $iflm_devo_tweet_quote_author_username ) ) {
+				update_post_meta( $post_id, 'iflm_devo-tweet_quote_author_username', $iflm_devo_tweet_quote_author_username );
+			}
+		}
+
+		if( array_key_exists('iflm_devo-shortURL', $_POST) ) {
+			$iflm_devo_shortURL = sanitize_text_field( $_POST[ 'iflm_devo-shortURL' ] );
+			if( isset( $iflm_devo_shortURL ) ) {
+				update_post_meta( $post_id, 'iflm_devo-shortURL', $iflm_devo_shortURL );
+			}
+		}
+		
 	}
-
-	// Checks for input and sanitizes/saves if needed
-	if( isset( $_POST[ 'iflm_devo-scripture' ] ) ) {
-		update_post_meta( $post_id, 'iflm_devo-scripture', sanitize_text_field( $_POST[ 'iflm_devo-scripture' ] ) );
-	}
-
-	if( isset( $_POST[ 'iflm_devo_footnote' ] ) ) {
-		update_post_meta( $post_id, 'iflm_devo_footnote', $_POST[ 'iflm_devo_footnote' ] );
-	}
-
-	if( isset( $_POST[ 'iflm_devo-tweet_quote' ] ) ) {
-		update_post_meta( $post_id, 'iflm_devo-tweet_quote', $_POST[ 'iflm_devo-tweet_quote' ] );
-	}
-
-	if( isset( $_POST[ 'iflm_devo-tweet_quote_author' ] ) ) {
-		update_post_meta( $post_id, 'iflm_devo-tweet_quote_author', sanitize_text_field( $_POST[ 'iflm_devo-tweet_quote_author' ] ) );
-	}
-
-	if( isset( $_POST[ 'iflm_devo-tweet_quote_author_username' ] ) ) {
-		update_post_meta( $post_id, 'iflm_devo-tweet_quote_author_username', sanitize_text_field( $_POST[ 'iflm_devo-tweet_quote_author_username' ] ) );
-	}
-
-	if( isset( $_POST[ 'iflm_devo-shortURL' ] ) ) {
-		update_post_meta( $post_id, 'iflm_devo-shortURL', sanitize_text_field( $_POST[ 'iflm_devo-shortURL' ] ) );
-	}
-
 }
 add_action( 'save_post', 'iflm_devo_meta_save' );
 
