@@ -15,10 +15,10 @@ Create devotional posts on your ministry blog or website, including standard or 
 Create devotional posts on your ministry blog, including standard or custom archives and RSS Feed. You can also optionally include tweetable quotes. Features include:
 
 * Linkable Scripture references, using any version accessible on biblegateway.com.
-* Tweetable Quotes that allow you to automatically add a memorable quote from the devotional and a \"Tweet This\" button to the bottom of devotional.
-* Tweetable Quote is automatically tied to the Author\'s user account twitter handle, but can be customized per devotional post.
+* Tweetable Quotes that allow you to automatically add a memorable quote from the devotional and a "Tweet This" button to the bottom of devotional.
+* Tweetable Quote is automatically tied to the Author's user account twitter handle, but can be customized per devotional post.
 * Footnote and copyright information can be easily added to bottom of each devotional.
-* RSS Feed and Archives pages can use standard WP or customized urls to match your site\'s navigation and permalink stucture.
+* RSS Feed and Archives pages can use standard WP or customized urls to match your site's navigation and permalink stucture.
 * RSS Feed is pre-formatted for Mailchimp and other RSS based content integrations.
 
 == Installation ==
@@ -38,10 +38,10 @@ Create devotional posts on your ministry blog, including standard or custom arch
 = To configure the plugin options: =
 
 1. Login to your WordPress dashboard and go to Settings -> Devotionals in the left menu.
-2. Define your permalink slug (url path) for your devotionals section. (e.g.: \"read/devotionals\" if your main devotionals page should live under the \"read\" section.)
+2. Define your permalink slug (url path) for your devotionals section. (e.g.: "read/devotionals" if your main devotionals page should live under the "read" section.)
 3. Choose to use standard archives or a customized page that lists your devotionals.
-4. Optionally, enable biblegateway.com links in your RSS Feed to link to the main scripture reference for each of your devotionals. Then define a default version of the Bible you want to use on biblegateway.com. (For example, if you want to use the New Living Translation on biblegateway, enter \"NLT\" for your default version. You can discover which versions biblegateway.com offers from the dropdown in their top search bar. Please note that biblegateway.com may not offer both New Testament and Old Testament searches in some non-English translations of the Bible.)
-5. Optionally, if you want to offer an easy \"Tweet This\" button below each devotional\'s pull-quote, then you will need to add your bit.ly login and API key so that the url of each devotional can be shortened and included in the tweet. If most of your devotionals are written by a main pastor, then select the main author\'s WP user account from the Default Author dropdown, and then define their twitter handle by editting their user profile.
+4. Optionally, enable biblegateway.com links in your RSS Feed to link to the main scripture reference for each of your devotionals. Then define a default version of the Bible you want to use on biblegateway.com. (For example, if you want to use the New Living Translation on biblegateway, enter "NLT" for your default version. You can discover which versions biblegateway.com offers from the dropdown in their top search bar. Please note that biblegateway.com may not offer both New Testament and Old Testament searches in some non-English translations of the Bible.)
+5. Optionally, if you want to offer an easy "Tweet This" button below each devotional's pull-quote, then you will need to add your bit.ly login and API key so that the url of each devotional can be shortened and included in the tweet. If most of your devotionals are written by a main pastor, then select the main author's WP user account from the Default Author dropdown, and then define their twitter handle by editting their user profile.
 
 == Screenshots ==
 1. Top of Settings Panel
@@ -52,12 +52,10 @@ Create devotional posts on your ministry blog, including standard or custom arch
 == Changelog ==
  
 # 1.2.9 - May 22, 2019 #
-Minor syntax fixes.
+Initial Wordpress Repo Release.
 
-# 1.2.7 - May 14, 2019 #
-Added url encoding to tweetable quote text when used as a part of the "Tweet This" url.
  
 == Upgrade Notice ==
  
 = 1.2.9 =
-We fixed a minor syntax error.
+Fixed a minor syntax error.
