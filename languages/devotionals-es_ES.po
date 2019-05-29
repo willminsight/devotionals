@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Devotionals\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-22 17:22+0000\n"
-"PO-Revision-Date: 2019-01-22 17:22+0000\n"
+"POT-Creation-Date: 2019-05-29 18:19+0000\n"
+"PO-Revision-Date: 2019-05-29 18:23+0000\n"
 "Last-Translator: Will Murphy <willm@insight.org>\n"
 "Language-Team: Spanish (Spain)\n"
 "Language: es_ES\n"
@@ -12,74 +12,74 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.2.0; wp-5.0.3"
+"X-Loco-Version: 2.2.2; wp-5.2.1"
 
 #. Name of the plugin
-#: devotionals.php:62 devotionals.php:74 inc/iflm_options.php:5
+#: devotionals.php:61 devotionals.php:73 inc/iflm_options.php:5
 msgid "Devotionals"
 msgstr "Devocionales"
 
-#: devotionals.php:63
+#: devotionals.php:62
 msgid "Devotional"
 msgstr ""
 
-#: devotionals.php:64 devotionals.php:65
+#: devotionals.php:63 devotionals.php:64
 msgid "Add New Devotional"
 msgstr ""
 
-#: devotionals.php:66
+#: devotionals.php:65
 msgid "Edit Devotional"
 msgstr ""
 
-#: devotionals.php:67
+#: devotionals.php:66
 msgid "New Devotional"
 msgstr ""
 
-#: devotionals.php:68
+#: devotionals.php:67
 msgid "All Devotionals"
 msgstr ""
 
-#: devotionals.php:69
+#: devotionals.php:68
 msgid "View Devotional"
 msgstr ""
 
-#: devotionals.php:70
+#: devotionals.php:69
 msgid "Search Devotionals"
 msgstr ""
 
-#: devotionals.php:71
+#: devotionals.php:70
 msgid "No Devotionals Found"
 msgstr ""
 
-#: devotionals.php:72
+#: devotionals.php:71
 msgid "No Devotionals found in Trash"
 msgstr ""
 
-#: devotionals.php:127
+#: devotionals.php:124
 msgid "Devotional Extras"
 msgstr ""
 
-#: devotionals.php:161
+#: devotionals.php:160
 msgid "Scripture Reference:"
 msgstr ""
 
-#: devotionals.php:198
+#: devotionals.php:199
 msgid "Quote:"
 msgstr ""
 
-#: devotionals.php:219
+#: devotionals.php:220
 msgid "Quote Author:"
 msgstr ""
 
-#: devotionals.php:239
+#: devotionals.php:240
 msgid "Quote Author's Twitter Username:"
 msgstr ""
 
-#: devotionals.php:242
+#: devotionals.php:243
 msgid "Enter the quote author's Twitter username (without @)"
 msgstr ""
 
-#: devotionals.php:350
+#: devotionals.php:375
 msgid "Tweet This"
 msgstr "Tweet esto"
 
@@ -87,64 +87,64 @@ msgstr "Tweet esto"
 msgid "Devotionals Options"
 msgstr ""
 
-#: inc/iflm_options.php:40
+#: inc/iflm_options.php:39
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 
-#: inc/iflm_options.php:45
+#: inc/iflm_options.php:44
 msgid "Devotionals Settings"
 msgstr ""
 
-#: inc/iflm_options.php:46
+#: inc/iflm_options.php:45
 msgid "These are general options for custom post type of Devotionals."
 msgstr ""
 
-#: inc/iflm_options.php:59
+#: inc/iflm_options.php:58
 msgid "Permalink Slug"
 msgstr ""
 
-#: inc/iflm_options.php:76
+#: inc/iflm_options.php:75
 msgid ""
 "This determines the URL \"folder\" for Devotional Archives and RSS Feed."
 msgstr ""
 
-#: inc/iflm_options.php:77
+#: inc/iflm_options.php:76
 msgid "Archives will be located at this URL: "
 msgstr ""
 
-#: inc/iflm_options.php:78
+#: inc/iflm_options.php:77
 msgid "RSS Feed will be located at this URL: "
 msgstr ""
 
-#: inc/iflm_options.php:87
+#: inc/iflm_options.php:86
 msgid "Use Standard Archives?"
 msgstr ""
 
-#: inc/iflm_options.php:92
+#: inc/iflm_options.php:91
 msgid "True"
 msgstr ""
 
-#: inc/iflm_options.php:93
+#: inc/iflm_options.php:92
 msgid "False"
 msgstr ""
 
-#: inc/iflm_options.php:98
+#: inc/iflm_options.php:97
 msgid ""
 "A TRUE setting will use a system generated <strong>default archives "
 "page</strong>."
 msgstr ""
 
-#: inc/iflm_options.php:99
+#: inc/iflm_options.php:98
 msgid ""
 "A FALSE setting will <strong>require a custom page</strong> saved at this "
 "URL: "
 msgstr ""
 
-#: inc/iflm_options.php:109
+#: inc/iflm_options.php:108
 msgid "Default RSS Bible version (optional)"
 msgstr ""
 
-#: inc/iflm_options.php:110
+#: inc/iflm_options.php:109
 msgid ""
 "Your Devotionals RSS feed will attempt to add a link to biblegateway.com "
 "around the main scripture reference at the top of the devotional. When "
@@ -152,86 +152,82 @@ msgid ""
 "display by default."
 msgstr ""
 
-#: inc/iflm_options.php:116
+#: inc/iflm_options.php:115
 msgid "Enable biblegateway.com in RSS feed?:"
 msgstr ""
 
-#: inc/iflm_options.php:121
+#: inc/iflm_options.php:120
 msgid "Enable"
 msgstr ""
 
-#: inc/iflm_options.php:122
+#: inc/iflm_options.php:121
 msgid "Disable"
 msgstr ""
 
-#: inc/iflm_options.php:148
+#: inc/iflm_options.php:147
 msgid "Default Version:"
 msgstr ""
 
-#: inc/iflm_options.php:155
+#: inc/iflm_options.php:154
 msgid ""
 "When this setting if left blank, your user's biblegateway.com preferences "
 "will determine what version is displayed."
 msgstr ""
 
-#: inc/iflm_options.php:156
+#: inc/iflm_options.php:155
 msgid ""
 "This setting can always be overridden on individual devotionals by simply "
 "adding a version to your scripture reference (e.g.: John 1:1 NLT)."
 msgstr ""
 
-#: inc/iflm_options.php:167
+#: inc/iflm_options.php:166
 msgid "Tweet This (optional)"
 msgstr ""
 
-#: inc/iflm_options.php:168
+#: inc/iflm_options.php:167
 msgid ""
 "Shorten the devotional URL in the shared tweet that is generated by the "
 "\"Tweet This\" button."
 msgstr ""
 
-#: inc/iflm_options.php:175
+#: inc/iflm_options.php:174
 msgid "Bit.ly Login:"
 msgstr ""
 
-#: inc/iflm_options.php:182
+#: inc/iflm_options.php:181
 msgid "Create an account at bit.ly"
 msgstr ""
 
-#: inc/iflm_options.php:182
+#: inc/iflm_options.php:181
 msgid "then enter your bit.ly login name above"
 msgstr ""
 
-#: inc/iflm_options.php:190
+#: inc/iflm_options.php:189
 msgid "Bit.ly API Key:"
 msgstr ""
 
-#: inc/iflm_options.php:197
+#: inc/iflm_options.php:196
 msgid "Generate your API key from bit.ly"
 msgstr ""
 
-#: inc/iflm_options.php:197
+#: inc/iflm_options.php:196
 msgid "(under Account > Advanced Settings > API Support)"
 msgstr ""
 
-#: inc/iflm_options.php:228
+#: inc/iflm_options.php:227
 msgid "Default Author:"
 msgstr ""
 
-#: inc/iflm_options.php:235
+#: inc/iflm_options.php:234
 msgid "Choose an existing author to default to for all NEW devotionals."
 msgstr ""
 
-#: inc/iflm_options.php:236
+#: inc/iflm_options.php:235
 msgid "Set the chosen author's Twitter Username "
 msgstr ""
 
-#: inc/iflm_options.php:236
+#: inc/iflm_options.php:235
 msgid " to their twitter handle (e.g: chuckswindoll for Charles R. Swindoll)."
-msgstr ""
-
-#. Name of the plugin
-msgid "IFLM Devotionals"
 msgstr ""
 
 #. Description of the plugin
@@ -241,7 +237,7 @@ msgid ""
 msgstr ""
 
 #. URI of the plugin
-msgid "https://insightworld.org/devotionals-plugin"
+msgid "https://github.com/willminsight/devotionals"
 msgstr ""
 
 #. Author of the plugin
@@ -249,5 +245,5 @@ msgid "Insight for Living Ministries"
 msgstr ""
 
 #. Author URI of the plugin
-msgid "https://insightworld.org/"
+msgid "https://insight.org/"
 msgstr ""

@@ -5,7 +5,7 @@ Plugin URI:		https://github.com/willminsight/devotionals
 GitHub Plugin URI:	willminsight/devotionals
 GitHub Plugin URI:	https://github.com/willminsight/devotionals
 Description:	Create devotional posts on your ministry blog, including standard or custom archives and RSS Feed. You can also optionally include tweetable quotes.
-Version:		1.2.9
+Version:		1.3
 Author:			Insight for Living Ministries
 Author URI:		https://insight.org/
 License:		GPL2
@@ -14,18 +14,18 @@ Text Domain:	devotionals
 Domain Path:	/languages/
 
 
-IFLM Devotionals is free software: you can redistribute it and/or modify
+Devotionals is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 2 of the License, or
 any later version.
  
-IFLM Devotionals is distributed in the hope that it will be useful,
+Devotionals is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
  
 You should have received a copy of the GNU General Public License
-along with Devotionals. If not, see {URI to Plugin License}.
+along with Devotionals. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
 */
 
 
@@ -101,6 +101,13 @@ function iflm_devo_install() {
 register_activation_hook( __FILE__, 'iflm_devo_install' );
 
 
+add_filter('plugin_action_links_'.plugin_basename(__FILE__), 'iflm_devo_add_plugin_page_settings_link');
+function iflm_devo_add_plugin_page_settings_link( $links ) {
+	$links[] = '<a href="' .
+		admin_url( 'options-general.php?page=devotionals' ) .
+		'">' . __('Settings') . '</a>';
+	return $links;
+}
 
 /**
  * Add Twitter handle/username to User Contact Information
