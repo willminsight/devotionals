@@ -32,6 +32,9 @@ Create devotional posts on your ministry blog, including standard or custom arch
 
 ## Change Log
 
+### 1.3.1 - September 15, 2019
+Archives category and tags listing fix.
+
 ### 1.3 - May 29, 2019
 Added Settings link to main Plugins admin screen.
 
