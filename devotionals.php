@@ -5,7 +5,7 @@ Plugin URI:		https://github.com/willminsight/devotionals
 GitHub Plugin URI:	willminsight/devotionals
 GitHub Plugin URI:	https://github.com/willminsight/devotionals
 Description:	Create devotional posts on your ministry blog, including standard or custom archives and RSS Feed. You can also optionally include tweetable quotes.
-Version:		1.3
+Version:		1.3.1
 Author:			Insight for Living Ministries
 Author URI:		https://insight.org/
 License:		GPL2
@@ -75,17 +75,20 @@ function iflm_devo_setup_post_type() {
 	
 	//register post type
 	register_post_type( 'iflm_devotional', array(
+		'capability_type' 		=> 'post',
+		'exclude_from_search'	=> false,
 		'labels' 				=> $labels,
 		'has_archive' 			=> $has_archive,
-		'public' 				=> true,
-		'supports' 				=> array( 'title', 'editor', 'excerpt', 'thumbnail', 'author', 'revisions' ),
-		'taxonomies' 			=> array( 'post_tag', 'category' ),
-		'exclude_from_search'	=> false,
-		'show_ui'				=> true,
+		'hierarchical'			=> false,
 		'menu_position' 		=> 5,
 		'menu_icon'				=> 'dashicons-book-alt',
-		'capability_type' 		=> 'post',
+		'public' 				=> true,
+		'publicly_queryable'	=> true,
+		'query_var'				=> true,
 		'rewrite' 				=> $rewrite,
+		'show_ui'				=> true,
+		'supports' 				=> array( 'title', 'editor', 'excerpt', 'thumbnail', 'author', 'revisions' ),
+		'taxonomies' 			=> array( 'post_tag', 'category' ),
 		)
 	);
 }
@@ -497,9 +500,9 @@ add_filter( 'the_content_feed', 'iflm_devo_content_feed');
 
 /* ARCHIVE: Display listings of devotionals */
 function iflm_devo_add_custom_types( $query ) {
-	if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+	if( $query->is_main_query() && !is_admin() && (is_category() || is_tag()) && empty( $query->query_vars['suppress_filters'] ) ) {
 		$query->set( 'post_type', array(
-			'post', 'nav_menu_item', 'iflm-devotional'
+			'post', 'nav_menu_item', 'iflm_devotional'
 		));
 		return $query;
 	}
